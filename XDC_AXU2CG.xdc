@@ -5,6 +5,7 @@
 
 ## PL CLOCK
 
+#create_clock -name PL_REF_CLK -period 40 -waveform {0 20} [get_ports {PL_REF_CLK}];
 #set_property -dict { PACKAGE_PIN AB11 IOSTANDARD LVCMOS33 } [get_ports PL_REF_CLK];    # CLK
 
 
